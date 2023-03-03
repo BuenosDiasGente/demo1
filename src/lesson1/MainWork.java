@@ -8,7 +8,6 @@ public class MainWork {
             System.out.println(gaiman);
             System.out.println(fragileThings);
 
-
             Author chirovici=new Author("Эуджен ", " Чировици: ");
             Book bookOfMirrors=new Book(" <<Книга зеркал>> ", chirovici,2017);
             System.out.println(chirovici);
@@ -16,7 +15,6 @@ public class MainWork {
             System.out.println();
             fragileThings.setPublish(2023);
             System.out.println(" Год издания: "+fragileThings.getPublish());
-
 
         }
 }
