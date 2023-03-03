@@ -25,6 +25,7 @@ public class MainWork {
         System.out.println(chirovici.hashCode());
         System.out.println("Эти две книги одинаковые?");
         System.out.println(fragileThings.equals(bookOfMirrors));
+        System.out.println("Какие у них хэш-коды?");
         System.out.println(fragileThings.hashCode());
         System.out.println(bookOfMirrors.hashCode());
 
