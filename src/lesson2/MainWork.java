@@ -3,6 +3,8 @@ package lesson2;
 import lesson1.Author;
 import lesson1.Book;
 
+import java.util.Objects;
+
 public class MainWork {
     public static void main(String[] args) {
 
@@ -28,6 +30,10 @@ public class MainWork {
         System.out.println("Какие у них хэш-коды?");
         System.out.println(fragileThings.hashCode());
         System.out.println(bookOfMirrors.hashCode());
+        
 
     }
+
+
+
 }

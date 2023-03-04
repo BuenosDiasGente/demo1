@@ -2,6 +2,8 @@ package lesson2;
 
 import lesson1.Author;
 
+import java.util.Objects;
+
 public class Book {
     private String nameBook;
     private lesson1.Author authorBook;
@@ -28,19 +30,20 @@ public class Book {
 
         this.publish = publish;
     }
-    
+
     @Override
-    public boolean equals(Object other){
-        if (this.getClass()!=other.getClass()||other==null){
-            return false;
-        }
-        Book bookOfMirrors=(Book) other;
-        return nameBook.equals(bookOfMirrors.nameBook);
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return publish == book.publish && nameBook.equals(book.nameBook) && authorBook.equals(book.authorBook);
     }
+
     @Override
     public int hashCode() {
-        return java.util.Objects.hash(nameBook);
+        return Objects.hash(nameBook, authorBook, publish);
     }
+
     @Override
     public String toString() {
         return this.nameBook +" год издания: "+ this.publish;
